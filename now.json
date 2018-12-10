@@ -1,9 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "dist/index.js", "use": "@now/node" }
+    { "src": "src/routes/**/*.js", "use": "@now/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/dist/$1" }
+    { "src": "/(.*)", "dest": "/src/routes/$1" }
   ]
 }
